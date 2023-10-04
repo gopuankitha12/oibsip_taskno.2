@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth ;
+
+}
+.navbar{
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    background-color:rgba(0,0,0,0.5) ;
+    position:sticky;
+    top: 0;
+
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin:20px 0px ;
+
+
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 20px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color:white;
+    color: black;
+    box-shadow:  0 0 10px black;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 800px; ;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+#home h1{
+    font-size: 40px;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('portfolic.jpg') no-repeat center center/cover ;
+    height: 1000px;
+    width: 100%;
+    z-index:-1;
+    opacity: .8;
+
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.headings{
+    font-family: century;
+    font:4rem ;
+    text-align: center;
+    margin: 40px 0px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid black;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: aliceblue;
+    color: black;
+    box-shadow: 0 0 5px white 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+.education .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    padding-left:3rem ;
+    height: 700px;
+    width: 100%;
+
+ 
+}
+.education .box-container .box{
+    width: 27rem;
+    margin: 4rem 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid red;
+    position: relative;
+}
+.span{
+    text-align: center;
+}
+
+.education .box-container .box h3{
+    font-size:2rem ;
+    color: yellowgreen;
+    padding-left: 1.5rem;
+
+}
+.education .box-container .box p{
+    font-size:1rem ;
+    color:whitesmoke;
+    padding-left: 1.5rem;
+
+}
+#education{
+    height: 800px;
+
+    background-color: black;
+
+}
+.education h2{
+    color: brown;
+    font-size: 50px;
+}
+#education p{
+    font-size: 30px;
+}
+.education h1{
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 90px;
+    font-size: 50px;
+}
+.education h3{
+    color: brown;
+    font-size: 50px;
+}
+.heading{
+    text-align: center;
+    margin: 0 6rem;
+    color: black;
+    font-size: large;
+    font-size: 4rem;
+    padding: 1rem 0;
+}
+   
+.heading span{
+    color: var(--yellow);
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+
+}
+.about .row .info{
+    flex: 1 1 48rem;
+    padding: 2rem 1rem;
+    padding-left: 6rem;
+
+}
+.about .row .info h3{
+    font-size:2rem ;
+    color: var(--yellow);
+    padding: 1rem 0;
+    font-weight: normal;
+
+}
+.about .row .info h3 span{
+    color: black;
+    padding: 0 .5rem;
+
+}
+.about .row .counter{
+    flex: 1 1 48rem;
+    padding: 22rem 1rem;
+}
+.about{
+    background-color:burlywood;
+    width:100% ;
+    height: 800px;
+    
+}
+.about h1{
+    text-align: center;
+    color: black;
+    padding-top: 80px;
+    font-size: 80px;
+}
+.about p{
+    font-size:2rem ;
+}
+.about .row .info h3 span{
+    color:brown;
+    padding:0 0.5rem;
+
+}
+
+.skills{
+    width:px;
+   
+    margin: 60px auto;
+    color: bisque;
+    background-color:black;
+    padding: 20px;
+    top: 200%;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+
+
+}
+.myskills h2{
+    color:black ;
+    font-size: larger;
+    text-align: center;
+    font-size: 80px;
+}
+.skills h3{
+    margin: 5px;
+}
+.skills h1{
+    text-align: center;
+
+}
+.skills li{
+    margin: 20px 0;
+    padding: 10px;
+
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.12), 0 10px 10x rgba(0, 0, 0, 0.22);
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236, 0, 140, 1)0%, rgba(252,103, 103, 1)100%);
+
+}
+.html{
+    width: 90%;
+    animation: html 3s;
+}
+.css{
+    width: 70%;
+    animation: css 3%;
+}
+.python{
+    width: 50%;
+    animation: python 3%;
+}
+.javascript{
+    width: 40%;
+    animation: javascript  3%;
+}
+h4 {
+    color: blue;
+    font-size: 50px;
+}
+h5 {
+    color: rgb(85, 24, 66);
+    font-size: 80px;
+    padding-left: 300px;
+    padding-top: 100PX;
+}
+#contactme {
+   
+    height: 800px;
+    padding-bottom: 20px;
+    padding-right: 20PX;
+    background-color: cadetblue;
+    
+}
+#anki {
+    padding-top: 50px;
+    padding-left: 300px;
+}
+.contactme {
+    padding-left: 300px;
+    color:yellow;
+}
+#message.input{
+    height: 200px;
+    width: 200px;
+    border-radius: 6px;
+}
+#name.input {
+    height: 50px;
+    width: 200px;
+    border-radius: 6px;
+}
+#email.input{
+    height: 50px;
+    width: 200px;
+    border-radius: 6px;
+}
+label {
+    text-transform: uppercase;
+    font-size: medium;
+}
+.submit {
+    padding-left: 1000px;
+    height: 100px;
+    width: 50px;
+    color: blue;
+    top: 200px;
+    padding-right: 200px;
+
+}
+button{
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 6px;
+    background: #7d2ae8;
+    transition: all 0.25 ease;
+}
